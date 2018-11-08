@@ -34,3 +34,7 @@ function removeElementFromEndOfArray(array) {
   array = array.slice(0, array.length - 1);
   return array;
 }
+function removeElementFromMiddleOfArray(array, element) {
+  array = [...array.splice(0, parseInt(element) - 1), ...array.splice(element);]
+  return array;
+}
