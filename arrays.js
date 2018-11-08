@@ -35,6 +35,7 @@ function removeElementFromEndOfArray(array) {
   return array;
 }
 function removeMid(array, element) {
-  array = [...array.splice(0, parseInt(element) - 1), ...array.splice(element)];
+  var int = parseInt(element);
+  array = [...array.splice(0, int - 1), ...array.splice(element)];
   return array;
 }
